@@ -1,6 +1,6 @@
 .slider {
     height: 400px;
-    background-color: darkcyan;
+    background-color: dodgerblue;
     margin: 0;
     overflow: hidden;
     .slide {
@@ -58,22 +58,19 @@
                     color: @black;
                 }
                 &:hover .superior-to {
-                    -webkit-filter: invert(1);
-                    filter: invert(1);
+                    -webkit-filter: none;
+                    filter: none;
                 }
                 .superior-to {
                     width: 20px;
                     height: 20px;
                     transition: filter .25s ease-out;
-                    background-image: url('../img/key-left.svg');
+                    background-image: url('../img/key-right.svg');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: 20px 20px;
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        display: block;
-                    }
+                    -webkit-filter: invert(1);
+                    filter: invert(1);
                 }
             }
         }

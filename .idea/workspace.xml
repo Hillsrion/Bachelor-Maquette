@@ -24,18 +24,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="145" column="35" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
+            <state relative-caret-position="404">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="second-slider.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/footer.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="second-slider.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/second-slider.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="-400">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -51,6 +61,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="header.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/less/header.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slider.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/slider.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+              <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -60,15 +91,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/less/header.less" />
         <option value="$PROJECT_DIR$/less/global.less" />
         <option value="$PROJECT_DIR$/img/key.svg" />
         <option value="$PROJECT_DIR$/less/var.less" />
         <option value="$PROJECT_DIR$/less/products.less" />
         <option value="$PROJECT_DIR$/less/app.less" />
         <option value="$PROJECT_DIR$/less/slider.less" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/less/second-slider.less" />
+        <option value="$PROJECT_DIR$/less/footer.less" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/less/header.less" />
       </list>
     </option>
   </component>
@@ -243,12 +275,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473971876399</updated>
-      <workItem from="1473971878652" duration="13233000" />
+      <workItem from="1473971878652" duration="14532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13233000" />
+    <option name="totallyTimeSpent" value="14532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -339,17 +371,9 @@
         <state relative-caret-position="-426">
           <caret line="1271" column="1" selection-start-line="1229" selection-start-column="9" selection-end-line="1229" selection-end-column="17" />
           <folding>
-            <marker date="1473985070890" expanded="true" signature="26239:26277" ph="{...}" />
-            <marker date="1473985070890" expanded="true" signature="26992:27107" ph="{...}" />
+            <marker date="1474023926361" expanded="true" signature="26527:26565" ph="{...}" />
+            <marker date="1474023926361" expanded="true" signature="27279:27396" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="94" column="9" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -393,14 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/slider.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -409,18 +425,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/less/slider.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="145" column="35" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
+        <state relative-caret-position="256">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/second-slider.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="-400">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/footer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
           <folding />
         </state>
       </provider>
