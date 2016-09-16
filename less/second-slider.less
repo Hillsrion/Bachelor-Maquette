@@ -1,0 +1,67 @@
+.second-slider {
+    margin: 120px 0 0 0;
+    background-color: green;
+    height: auto;
+    min-height: 480px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: -25px;
+        height: 50px;
+        display: block;
+        transform: rotate(-2deg);
+        background-color: green;
+        z-index: -1;
+    }
+    &__wrapper {
+        width: 100%;
+    }
+    &__name {
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+        padding-top: 40px;
+        color: @black;
+    }
+    &__content {
+        margin: 0;
+        height: 100%;
+    }
+    &__slides {
+        padding: 0 45px;
+        .slide {
+            margin: 0;
+            &__image {
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__title {
+
+            }
+            &__text {
+
+            }
+            &__button {
+
+            }
+        }
+    }
+    &__arrow {
+        flex-basis: 40px;
+        max-width: 40px;
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+        background-position: center;
+        &--left {
+            background-image: url('../img/key-left.svg');
+        }
+        &--right {
+            background-image: url('../img/key-right.svg');
+        }
+    }
+}

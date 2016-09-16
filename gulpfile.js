@@ -47,7 +47,11 @@ gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
-    browserSync.init();
+  browserSync.init({
+    server: {
+      baseDir: ''
+    },
+  })
 })
 
 // Dev task with browserSync

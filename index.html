@@ -9,22 +9,151 @@
     <link rel="stylesheet" href="css/app.css" media="screen">
   </head>
   <body>
-    <header class="header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="javascript:void">Accueil</a></li>
-          <li class="main-nav__item"><a href="javascript:void">En cours</a></li>
-          <li class="main-nav__item"><a href="javascript:void">Historique</a></li>
-        </ul>
-      </nav>
-      <div class="account">
-        <div class="account__username">
-          <span>Sophia Lopez</span>
-          <div class="account__button"></div>
-          <div class="account__options"></div>
+    <header class="row middle-xs center-xs header">
+        <div class="col-row col-row--mid header__wrapper">
+          <nav class="col-md-8 main-nav">
+            <ul class="row start-xs main-nav__list">
+              <li class="main-nav__item main-nav__item--active"><a href="javascript:void">Accueil</a></li>
+              <li class="main-nav__item"><a href="javascript:void">En cours</a></li>
+              <li class="main-nav__item"><a href="javascript:void">Historique</a></li>
+            </ul>
+          </nav>
+          <div class="col-md-4 account">
+            <div class="row end-xs account__wrapper">
+              <div class="account__username">
+                <a href="javascript:void">Sophia Lopez</a>
+                <div class="account__button"></div>
+                <div class="account__options"></div>
+              </div>
+              <div class="account__disconnect"><a href="javascript:void">Déconnexion</a></div>
+            </div>
+          </div>
         </div>
-        <div class="account__disconnect"><a href="javascript:void">Déconnexion</a></div>
-      </div>
     </header>
+    <section class="row center-xs slider">
+      <div class="col-xs-9">
+        <article class="row slide slide--custom">
+            <div class="col-xs-12 slide__head">
+              <h3 class="slide__name">Nom du modèle</h3>
+              <div class="slide__infos infos">
+                <div class="infos__group">
+                  <span class="size">Taille S</span>
+                  <span class="type">- Automatique</span>
+                </div>
+                <span class="color">Vert Anglais</span>
+              </div>
+            </div>
+            <div class="col-xs-12 slide__bottom">
+              <div class="row start-xs slide__button">
+                <a href="javascript:void" class="label">
+                  Commander
+                  <span class="superior-to"></span>
+                </a>
+              </div>
+            </div>
+        </article>
+      </div>
+    </section>
+    <section class="row center-xs products">
+      <div class="col-xs-9">
+        <div class="row between-xs products__head">
+          <h2 class="products__title">Best-seller</h2>
+          <div class="products__filter">
+            <span>Trier par : </span>
+            <select name="" class="select">
+              <option value="Stock">Stock</option>
+              <option value="Couleur">Couleur</option>
+              <option value="Taille">Taille</option>
+            </select>
+          </div>
+        </div>
+        <div class="row products__list">
+          <div class="item">
+            <div class="item__image"></div>
+            <div class="item__caption">
+              <h3 class="item__name">Nom du modèle un peu long</h3>
+              <div class="item__group">
+                <span class="item__type">Manuel -</span>
+                <span class="item__color">Vert Gazon</span>
+              </div>
+              <div class="item__stock item__stock--empty">
+                <span>0 en stock</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image"></div>
+            <div class="item__caption">
+              <h3 class="item__name">Nom du modèle un peu long</h3>
+              <div class="item__group">
+                <span class="item__type">Manuel -</span>
+                <span class="item__color">Vert Gazon</span>
+              </div>
+              <div class="item__stock item__stock--empty">
+                <span>0 en stock</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image"></div>
+            <div class="item__caption">
+              <h3 class="item__name">Nom du modèle un peu long</h3>
+              <div class="item__group">
+                <span class="item__type">Manuel -</span>
+                <span class="item__color">Vert Gazon</span>
+              </div>
+              <div class="item__stock item__stock--empty">
+                <span>0 en stock</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image"></div>
+            <div class="item__caption">
+              <h3 class="item__name">Nom du modèle un peu long</h3>
+              <div class="item__group">
+                <span class="item__type">Manuel -</span>
+                <span class="item__color">Vert Gazon</span>
+              </div>
+              <div class="item__stock item__stock--empty">
+                <span>0 en stock</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__image"></div>
+            <div class="item__caption">
+              <h3 class="item__name">Nom du modèle un peu long</h3>
+              <div class="item__group">
+                <span class="item__type">Manuel -</span>
+                <span class="item__color">Vert Gazon</span>
+              </div>
+              <div class="item__stock item__stock--empty">
+                <span>0 en stock</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row center-xs second-slider">
+      <div class="col-xs-9 second-slider__wrapper">
+        <h2 class="row center-xs second-slider__name">Nouveautés</h2>
+        <article class="row second-slider__content">
+          <div class="second-slider__arrow second-slider__arrow--left"></div>
+          <section class="col-xs second-slider__slides">
+            <article class="row slide">
+              <div class="col-md-5 slide__image">
+                <img src="http://www.presse-citron.net/wordpress_prod/wp-content/uploads/2016/04/Tesla-modele-S.jpg" alt="Tesla">
+              </div>
+            </article>
+          </section>
+          <div class="second-slider__arrow second-slider__arrow--right"></div>
+        </article>
+        <aside class="second-slider__carousel">
+          <div class="item"></div>
+        </aside>
+      </div>
+    </section>
   </body>
 </html>
