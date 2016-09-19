@@ -1,5 +1,6 @@
 html * {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -42,7 +43,43 @@ body {
     &.mid {
         align-items: center;
     }
-    @media screen and (max-width: @max-size) {
+    @media screen and (max-width: @max-size-sm-breakpoint) {
         .flex-fixed(80%);
+    }
+}
+
+.command-button {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    .label {
+        padding: 10px;
+        border: 1px solid white;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: lowercase;
+        transition: background-color .25s ease-out;
+        color: white;
+        &:hover {
+            background-color: #fff;
+            color: @black;
+        }
+        &:hover .superior-to {
+            -webkit-filter: none;
+            filter: none;
+        }
+        .superior-to {
+            width: 20px;
+            height: 20px;
+            transition: filter .25s ease-out;
+            background-image: url('../img/key-right.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            -webkit-filter: invert(1);
+            filter: invert(1);
+        }
     }
 }

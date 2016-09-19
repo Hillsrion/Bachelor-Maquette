@@ -11,14 +11,14 @@
   <body>
     <header class="row middle-xs center-xs header">
         <div class="maxi-size maxi-size--row middle-xs header__wrapper">
-          <nav class="col-md-8 col-xs-12 main-nav">
+          <nav class="col-sm-7 main-nav">
             <ul class="row start-xs main-nav__list">
               <li class="main-nav__item main-nav__item--active"><a href="javascript:void">Accueil</a></li>
               <li class="main-nav__item"><a href="javascript:void">En cours</a></li>
               <li class="main-nav__item"><a href="javascript:void">Historique</a></li>
             </ul>
           </nav>
-          <div class="col-md-4 col-xs-12 account">
+          <div class="col-sm-5 col-xs-12 account">
             <div class="row end-xs account__wrapper">
               <div class="account__username">
                 <a href="javascript:void">Sophia Lopez</a>
@@ -69,7 +69,7 @@
         </div>
         <div class="row products__list">
           <div class="item">
-            <div class="item__image"></div>
+            <div class="item__image"><img src="img/evoli.png" alt="Evoli"></div>
             <div class="item__caption">
               <h3 class="item__name">Nom du modèle un peu long</h3>
               <div class="item__group">
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="item">
-            <div class="item__image"></div>
+            <div class="item__image"><img src="img/carabaffe.png" alt="Carabaffe"></div>
             <div class="item__caption">
               <h3 class="item__name">Nom du modèle un peu long</h3>
               <div class="item__group">
@@ -90,46 +90,46 @@
                 <span class="item__color">Vert Gazon</span>
               </div>
               <div class="item__stock item__stock--empty">
-                <span>0 en stock</span>
+                <span>1 en stock</span>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="item__image"></div>
+            <div class="item__image"><img src="img/dracaufeu.png" alt="Dracaufeu"></div>
             <div class="item__caption">
               <h3 class="item__name">Nom du modèle un peu long</h3>
               <div class="item__group">
                 <span class="item__type">Manuel -</span>
                 <span class="item__color">Vert Gazon</span>
               </div>
-              <div class="item__stock item__stock--empty">
-                <span>0 en stock</span>
+              <div class="item__stock">
+                <span>4 en stock</span>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="item__image"></div>
+            <div class="item__image"><img src="img/hericendre.png" alt="Héricendre"></div>
             <div class="item__caption">
               <h3 class="item__name">Nom du modèle un peu long</h3>
               <div class="item__group">
                 <span class="item__type">Manuel -</span>
                 <span class="item__color">Vert Gazon</span>
               </div>
-              <div class="item__stock item__stock--empty">
-                <span>0 en stock</span>
+              <div class="item__stock">
+                <span>4 en stock</span>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="item__image"></div>
+            <div class="item__image"><img src="img/bulbizarre.png" alt="Bulbizarre"></div>
             <div class="item__caption">
               <h3 class="item__name">Nom du modèle un peu long</h3>
               <div class="item__group">
                 <span class="item__type">Manuel -</span>
                 <span class="item__color">Vert Gazon</span>
               </div>
-              <div class="item__stock item__stock--empty">
-                <span>0 en stock</span>
+              <div class="item__stock">
+                <span>4 en stock</span>
               </div>
             </div>
           </div>
@@ -138,21 +138,37 @@
     </section>
     <section class="row center-xs second-slider">
       <div class="maxi-size second-slider__wrapper">
-        <h2 class="row center-xs second-slider__name">Nouveautés</h2>
-        <article class="row second-slider__content">
-          <div class="second-slider__arrow second-slider__arrow--left"></div>
-          <section class="col-xs second-slider__slides">
-            <article class="row slide">
-              <div class="col-md-5 slide__image">
-                <img src="http://www.presse-citron.net/wordpress_prod/wp-content/uploads/2016/04/Tesla-modele-S.jpg" alt="Tesla">
-              </div>
-            </article>
-          </section>
-          <div class="second-slider__arrow second-slider__arrow--right"></div>
-        </article>
-        <aside class="second-slider__carousel">
-          <div class="item"></div>
-        </aside>
+        <div class="second-slider__arrow second-slider__arrow--left"><span></span></div>
+        <div class="second-slider__inner">
+          <article class="row second-slider__content">
+            <h2 class="row center-xs second-slider__name">Nouveautés</h2>
+            <section class="col-xs second-slider__slides">
+              <article class="row slide">
+                <div class="slide__image">
+                  <img src="http://www.presse-citron.net/wordpress_prod/wp-content/uploads/2016/04/Tesla-modele-S.jpg" alt="Tesla">
+                </div>
+                <div class="slide__content">
+                  <h1 class="slide__title">Nom du nouveau modèle</h1>
+                  <p class="slide__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
+                  </p>
+                  <div class="slide__button">
+                    <a href="javascript:void" class="label">
+                      Commander
+                      <span class="superior-to"></span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </article>
+          <aside class="row middle-xs center-xs second-slider__carousel">
+            <div class="item"></div>
+            <div class="item item--current"></div>
+            <div class="item"></div>
+          </aside>
+        </div>
+        <div class="second-slider__arrow second-slider__arrow--right"><span></span></div>
       </div>
     </section>
     <footer class="row footer">
