@@ -1,0 +1,16 @@
+.flex-sizing(@relative-proportion,@cols:@cols-number) {
+    @result: (@cols/@relative-proportion);
+    @percentage: calc(~'100% / @{result}');
+    -ms-flex-preferred-size: @percentage;
+    -webkit-flex-basis: @percentage;
+    flex-basis: @percentage;
+    max-width: @percentage;
+}
+
+.flex-fixed(@size,@gutter:0px) {
+    @calc: calc(~'@{size} - @{gutter}');
+    -ms-flex-preferred-size: @calc;
+    -webkit-flex-basis: @calc;
+    flex-basis: @calc;
+    max-width: @calc;
+}
