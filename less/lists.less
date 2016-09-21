@@ -25,12 +25,18 @@
             }
             &__group {
                 &--min-sized {
-                    // I add one pixel to make sure the result is ceil'd.
-                    flex-basis: calc(~'@{icon-size} + 51px*0.6');
+                    flex-basis: @icon-size*2;
+                    max-width: @icon-size*2;
+                    /* I need a 20px margin between the icon and the command number, but i can't get this correctly
+                    because i got a negative x translate on the icon to respect the da. */
+                    margin-right: -@icon-size*0.15;
                     display: flex;
                 }
-                &--has-margin {
+                &--automargin {
                     margin-left: auto;
+                }
+                &--margin {
+                    margin-left: 15px;
                 }
             }
             &__inner-group {
