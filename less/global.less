@@ -3,12 +3,16 @@ html * {
     -webkit-font-smoothing: antialiased;
 }
 
+body {
+    color: @black;
+}
+
 a {
     text-decoration: none;
 }
 
-body {
-    color: @black;
+ul {
+    list-style: none;
 }
 
 .flex-display {
@@ -34,6 +38,11 @@ body {
     flex-wrap: wrap;
 }
 
+.reset {
+    padding: 0;
+    margin: 0;
+}
+// Acts like a col, but aswell as a row if the modifier is applied.
 .maxi-size {
     .flex-display;
     .flex-fixed(@max-size);
@@ -46,6 +55,10 @@ body {
     @media screen and (max-width: @max-size-sm-breakpoint) {
         .flex-fixed(80%);
     }
+}
+
+.strong {
+    font-weight: bold;
 }
 
 .command-button {

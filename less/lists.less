@@ -1,0 +1,150 @@
+.lists {
+    margin: 50px 0 0 0;
+    &__wrapper {
+        margin: 0;
+    }
+    .stack {
+        padding: 0;
+        &__title {
+            margin-top: 0;
+            margin-bottom: 50px;
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+        }
+        &__list {
+            margin: 0;
+            padding: 0 50px 0 0;
+        }
+        .item {
+            @icon-size: 50px;
+            border-bottom: 1px solid @grey--light;
+            flex-wrap: nowrap;
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
+            &__group {
+                &--min-sized {
+                    // I add one pixel to make sure the result is ceil'd.
+                    flex-basis: calc(~'@{icon-size} + 51px*0.6');
+                    display: flex;
+                }
+                &--has-margin {
+                    margin-left: auto;
+                }
+            }
+            &__inner-group {
+                padding-right: 5px;
+            }
+            &__image {
+                width: @icon-size;
+                height: @icon-size;
+                position: relative;
+                border: 1px solid;
+                border-color: @icon-regular;
+                display: block;
+                border-radius: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                img {
+                    display: none;
+                }
+                &--1 {
+                    background-image: url('../img/melissa.jpg');
+                }
+                &--2 {
+                    background-image: url('../img/will-smith.jpg');
+                }
+                &--3 {
+                    background-image: url('../img/stephen-amell.jpg');
+                }
+                &--4 {
+                    background-image: url('../img/jennifer-lawrence.jpg');
+                }
+                &--warning {
+                    border-color: @red;
+                }
+            }
+            &__name {
+                // 13 instead of 14 otherwise it doesn't fit in 25px height. --> Respect the DA
+                font-size: 13px;
+                margin: 0;
+                text-align: left;
+                color: @grey;
+            }
+            &__icon {
+                width: @icon-size;
+                height: @icon-size;
+                border-radius: 100%;
+                transform: translate3d(-20%,0,0);
+                display: block;
+                background-color: @icon-regular;
+                background-position: 7.5px center;
+                background-repeat: no-repeat;
+                background-size: 33px;
+                background-image: url('../img/truck.svg');
+                border: 1px solid;
+                border-color: @icon-regular;
+                &--warning,&--success {
+                    border: none;
+                }
+                &--warning {
+                    background-color: @red;
+                    background-image: url('../img/info.svg');
+                    background-size: 25px;
+                    background-position: 12.5px center;
+                }
+                &--success {
+                    background-color: @dirty-green;
+                    background-image: url('../img/tick.svg');
+                    background-size: 25px;
+                    background-position: center;
+                }
+            }
+            &__infos {
+                font-size: 11px;
+                margin-top: 3px;
+                margin-bottom: 0;
+                color: @grey;
+                text-align: left;
+            }
+            &__state {
+                font-size: 10px;
+                color: @grey;
+                text-align: left;
+                margin-top: 10px;
+                margin-bottom: 25px;
+                &--warning,&--success {
+                    font-weight: bold;
+                }
+                &--warning {
+                    color: @red;
+                }
+                &--success {
+                    color: @dirty-green;
+                }
+            }
+            .button {
+                margin-top: 5px;
+                padding: 10px;
+                border: 1px solid @red;
+                display: flex;
+                align-items: center;
+                color: @grey;
+                &__label {
+
+                }
+                &__icon {
+                    width: 18px;
+                    height: 18px;
+                    svg {
+                        fill: @red;
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
