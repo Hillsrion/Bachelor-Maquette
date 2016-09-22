@@ -1,20 +1,27 @@
 .footer {
 	margin: 0;
-	background-color: blue;
+	background-color: dodgerblue;
 	height: auto;
-	min-height: 310px;
-	&__nav-list {
+	min-height: 260px;
+}
+
+.nav-stack {
+	&__list {
 		list-style: none;
 		padding: 0;
 	}
-	&__nav-item {
+	&__item {
+		color: white;
 		&--main {
 			margin-bottom: 20px;
 		}
 	}
-	&__nav-stack {
-		&:first-child {
-			padding-left: 60px;
-		}
+	&__title {
+		color: white;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	&:first-child {
+		padding-left: 60px;
 	}
 }

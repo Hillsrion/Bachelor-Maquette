@@ -68,6 +68,9 @@
                 &--4 {
                     background-image: url('../img/jennifer-lawrence.jpg');
                 }
+                &--5 {
+                    background-image: url('../img/business.jpg');
+                }
                 &--warning {
                     border-color: @red;
                 }
@@ -78,6 +81,9 @@
                 margin: 0;
                 text-align: left;
                 color: @grey;
+                &--small {
+                    font-size: 11px;
+                }
             }
             &__icon {
                 width: @icon-size;
@@ -86,7 +92,7 @@
                 transform: translate3d(-20%,0,0);
                 display: block;
                 background-color: @icon-regular;
-                background-position: 7.5px center;
+                background-position: 6.5px center;
                 background-repeat: no-repeat;
                 background-size: 33px;
                 background-image: url('../img/truck.svg');
@@ -114,6 +120,10 @@
                 margin-bottom: 0;
                 color: @grey;
                 text-align: left;
+                &--big {
+                    font-size: 13px;
+                    font-weight: bold;
+                }
             }
             &__state {
                 font-size: 10px;
@@ -124,12 +134,9 @@
                 &--warning,&--success {
                     font-weight: bold;
                 }
-                &--warning {
-                    color: @red;
-                }
-                &--success {
-                    color: @dirty-green;
-                }
+                &--warning { color: @red; }
+                &--success { color: @dirty-green; }
+                &--recommended {color: @light-label;}
             }
             .button {
                 margin-top: 5px;
