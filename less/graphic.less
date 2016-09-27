@@ -1,0 +1,84 @@
+.graphic {
+    margin: 50px 0 0 0;
+    padding-top: 40px;
+    min-height: 400px;
+    background-color: @red;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: -25px;
+        height: 50px;
+        display: block;
+        transform: rotate(1.5deg) skew(1.5deg);
+        background-color: @red;
+        z-index: -1;
+    }
+    &__head {
+        margin: 0 50px;
+        h2 {
+            .small-title;
+            margin: 0;
+        }
+    }
+    &__stats {
+        height: 200px;
+        margin-top: 40px;
+    }
+    &__arrow {
+        flex-grow: 0;
+        flex-basis: 50px;
+        max-width: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        span {
+            background-image: url('../img/chevron-gauche.svg');
+            background-repeat: no-repeat;
+            -webkit-filter: invert(1);
+            filter: invert(1);
+            height: 35px;
+            width:20px;
+            display: block;
+            cursor: pointer;
+            transform: translate3d(0,calc(~'-50% + 5px'),0);
+        }
+    }
+    &__canvas {
+        background-image: url('../img/graph.PNG');
+        background-repeat: no-repeat;
+        background-size: 850px 205px;
+    }
+    &__legend {
+        margin-top: 40px;
+        .item {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            &__icon {
+                margin-right: 5px;
+                width: 7px;
+                height: 7px;
+                background-color: white;
+                &--circle {
+                    border-radius: 100%;
+                    background-color: @dirty-green;
+                }
+                &--triangle {
+                    width: 0;
+                    height: 0;
+                    background-color: transparent;
+                    border-bottom: solid 7px dodgerblue;
+                    border-left: solid 4px transparent;
+                    border-right: solid 4px transparent;
+                }
+            }
+            &__label {
+                font-size: 9.5px;
+                color: white;
+            }
+        }
+    }
+}

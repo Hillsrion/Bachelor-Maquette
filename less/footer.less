@@ -1,27 +1,38 @@
 .footer {
-	margin: 0;
+	margin-top: 85px;
 	background-color: dodgerblue;
 	height: auto;
 	min-height: 260px;
+	padding-top: 50px;
 }
 
 .nav-stack {
+	flex-grow: 1;
+	padding-right: 7px;
+	@media screen and (max-width: 520px) {
+		flex-basis: 50%;
+		max-width: 50%;
+		&:nth-child(n + 3) {
+			margin-top: 25px;
+		}
+	}
 	&__list {
 		list-style: none;
 		padding: 0;
 	}
+	&__title {
+		.small-title;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
 	&__item {
 		color: white;
-		&--main {
-			margin-bottom: 20px;
-		}
-	}
-	&__title {
-		color: white;
+		text-align: left;
 		font-size: 14px;
-		font-weight: bold;
-	}
-	&:first-child {
-		padding-left: 60px;
+		font-weight: normal;
+		word-break: break-word;
+		&:not(:last-child) {
+			margin-bottom: 6px;
+		}
 	}
 }

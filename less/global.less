@@ -5,6 +5,19 @@ html * {
 
 body {
     color: @black;
+    overflow-x: hidden;
+    &::-webkit-input-placeholder {
+        color: @grey;
+    }
+    &::-moz-placeholder {
+        color: @grey;
+    }
+    &::-ms-input-placeholder {
+        color: @grey;
+    }
+    &::-moz-placeholder {
+        color: @grey;
+    }
 }
 
 a {
@@ -61,6 +74,180 @@ ul {
     font-weight: bold;
 }
 
+.small-title {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+}
+
+.button {
+    padding: 10px;
+    border: 1px solid @grey--light;
+    display: flex;
+    align-items: center;
+    color: @grey;
+    &--consultation {
+        margin-top: 5px;
+        border-color: @red;
+    }
+    &__label {
+        font-size: 14px;
+        .button--reverse & { margin-left: 10px; }
+    }
+    &__icon {
+        height: 18px;
+        margin-left: 10px;
+        .button--reverse & { margin-left: 0; }
+        svg {
+            height: 10px;
+            path {
+                fill: @grey;
+            }
+        }
+        .button--consultation & {
+            margin-left: 20px;
+            svg path {
+                fill: @red;
+            }
+        }
+    }
+}
+
+.form-group {
+    // Pour retirer le gap de 2-3px entre le label et le select.
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &:first-child {
+        margin-right: 30px;
+    }
+    &__label {
+        &--onbackground {
+            color: white;
+        }
+        margin-right: 10px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        &:first-child:not(:only-child) {
+            margin-right: 30px;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        &::before {
+            content:'';
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            border-top: solid 3px @select-arrow--color;
+            border-left: solid 3px transparent;
+            border-right: solid 3px transparent;
+            display: block;
+            z-index: 1;
+        }
+        &::after {
+            content:'';
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            border-bottom: solid 3px @select-arrow--color;
+            border-left: solid 3px transparent;
+            border-right: solid 3px transparent;
+            display: block;
+            z-index: 1;
+        }
+        &--white {
+            &::before {
+                border-top: solid 3px white;
+            }
+            &::after {
+                border-bottom: solid 3px white;
+            }
+        }
+        &--no-arrow {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 10px;
+                top: 0;
+                border: none;
+                background-image: url('../img/loupe.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 19px;
+                width: 20px;
+                height: 100%;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__input {
+        height: 30px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appeareance: none;
+        width: 255px;
+        border: 1px solid @border-select--color;
+        box-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        font-size: 14px;
+        padding: 0 10px 0 40px;
+        color: @grey;
+        position: relative;
+    }
+    &__select {
+        height: 30px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appeareance: none;
+        align-items: center;
+        width: 120px;
+        background-color: white;
+        border: 1px solid @border-select--color;
+        color: @grey;
+        font-size: 14px;
+        padding: 0 10px;
+        position: relative;
+        cursor: pointer;
+        display: block;
+        outline: none;
+        padding-right: 40px;
+        box-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+        &--graphic {
+            background-color: @red--dark;
+            color: white;
+            border-color: white;
+        }
+    }
+}
+
+.expand {
+    margin-top: 35px;
+    position: relative;
+    &::before,&::after {
+        content:'';
+        height:1px;
+        flex-grow:1;
+        background-color: @grey--light;
+        display: block;
+        //width: 50%;
+        left: 0;
+    }
+    &--padding {
+        padding-right: 50px;
+    }
+}
+
 .command-button {
     margin: 0;
     color: white;
@@ -85,14 +272,14 @@ ul {
         }
         .superior-to {
             width: 20px;
-            height: 20px;
+            height: 10px;
             transition: filter .25s ease-out;
             background-image: url('../img/key-right.svg');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 20px 20px;
             -webkit-filter: invert(1);
             filter: invert(1);
         }
     }
 }
+

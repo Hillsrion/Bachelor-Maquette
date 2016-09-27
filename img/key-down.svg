@@ -3,12 +3,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-<line fill="none" x1="7.1" y1="25.4" x2="7.7" y2="26"/>
-<g>
-	
-		<rect x="3.7" y="6.2" transform="matrix(-0.7075 -0.7067 0.7067 -0.7075 16.6426 20.0721)" fill="#010101" width="17.5" height="0.8"/>
-	
-		<rect x="3.7" y="18.1" transform="matrix(-0.7075 0.7067 -0.7067 -0.7075 34.2921 22.7971)" fill="#010101" width="17.5" height="0.8"/>
-</g>
-<rect x="2.5" fill="none" width="20" height="25"/>
+<path d="M25,7.7l-2.9-2.9l-9.6,9.5L2.9,4.8L0.1,7.7l12.5,12.5L25,7.7z"/>
 </svg>

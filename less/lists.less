@@ -18,10 +18,18 @@
         }
         .item {
             @icon-size: 50px;
-            border-bottom: 1px solid @grey--light;
-            flex-wrap: nowrap;
             &:not(:first-child) {
                 margin-top: 25px;
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid @grey--light;
+            }
+            &:last-child {
+                .item {
+                    &__state {
+                        margin-bottom: 0;
+                    }
+                }
             }
             &__group {
                 &--min-sized {
@@ -137,26 +145,6 @@
                 &--warning { color: @red; }
                 &--success { color: @dirty-green; }
                 &--recommended {color: @light-label;}
-            }
-            .button {
-                margin-top: 5px;
-                padding: 10px;
-                border: 1px solid @red;
-                display: flex;
-                align-items: center;
-                color: @grey;
-                &__label {
-
-                }
-                &__icon {
-                    width: 18px;
-                    height: 18px;
-                    svg {
-                        fill: @red;
-                        width: 18px;
-                        height: 18px;
-                    }
-                }
             }
         }
     }
