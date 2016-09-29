@@ -145,63 +145,32 @@
           <article class="row second-slider__content">
             <h2 class="second-slider__name">Nouveautés</h2>
             <section class="second-slider__slides">
-              <article data-slide-index="1" class="row slide">
-                <div class="slide__image">
-                  <img src="http://www.presse-citron.net/wordpress_prod/wp-content/uploads/2016/04/Tesla-modele-S.jpg" alt="Tesla">
-                </div>
-                <div class="slide__content">
-                  <h1 class="slide__title">Nom du nouveau modèle</h1>
-                  <p class="slide__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
-                  </p>
-                  <div class="slide__button">
-                    <a href="javascript:void" class="label">
-                      Commander
-                      <span class="superior-to"></span>
-                    </a>
-                  </div>
-                </div>
-              </article>
               <article data-slide-index="2" class="row slide slide--current">
                 <div class="slide__image">
-                  <img src="http://www.presse-citron.net/wordpress_prod/wp-content/uploads/2016/04/Tesla-modele-S.jpg" alt="Tesla">
+                  <div class="slide__mask"></div>
+                  <img src="img/voiture2.jpg" alt="Tesla">
                 </div>
                 <div class="slide__content">
-                  <h1 class="slide__title">Nom du nouveau modèle</h1>
-                  <p class="slide__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
-                  </p>
-                  <div class="slide__button">
-                    <a href="javascript:void" class="label">
-                      Commander
-                      <span class="superior-to"></span>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article data-slide-index="3" class="row slide">
-                <div class="slide__image">
-                  <img src="http://www.presse-citron.net/wordpress_prod/wp-content/uploads/2016/04/Tesla-modele-S.jpg" alt="Tesla">
-                </div>
-                <div class="slide__content">
-                  <h1 class="slide__title">Nom du nouveau modèle</h1>
-                  <p class="slide__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
-                  </p>
-                  <div class="slide__button">
-                    <a href="javascript:void" class="label">
-                      Commander
-                      <span class="superior-to"></span>
-                    </a>
+                  <div class="slide__wrapper">
+                    <h1 class="slide__title">Nom du nouveau modèle</h1>
+                    <p class="slide__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
+                    </p>
+                    <div class="slide__button">
+                      <a href="javascript:void" class="label">
+                        Commander
+                        <span class="superior-to"></span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </article>
             </section>
           </article>
           <aside class="row middle-xs center-xs second-slider__carousel">
-            <div data-index="1" class="item"></div>
-            <div data-index="2" class="item item--current"></div>
-            <div data-index="3" class="item"></div>
+            <div data-index="1" class="item"><div class="item__inner"></div></div>
+            <div data-index="2" class="item item--current"><div class="item__inner"></div></div>
+            <div data-index="3" class="item"><div class="item__inner"></div></div>
           </aside>
         </div>
         <div class="second-slider__arrow second-slider__arrow--right"><span></span></div>
@@ -530,6 +499,15 @@
         </nav>
       </div>
     </footer>
+  <script type="text/template" id="lorem-template">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi atque autem commodi ducimus ea esse, et harum ipsum minus nihil nostrum placeat quisquam rerum sed similique suscipit. Maxime, vero.
+  </script>
+  <script type="text/template" id="cup-template">
+    Candy danish chupa chups danish pie. Sweet roll jelly candy toffee bear claw sweet roll. Donut pastry topping cupcake muffin donut oat cake icing. Lemon drops lollipop pastry macaroon marzipan topping bear claw.
+  </script>
+  <script type="text/template" id="cup-template2">
+    Jelly powder halvah gingerbread icing sweet roll sugar plum. Tootsie roll croissant gummies topping marzipan gingerbread apple pie sweet roll cookie. Cake soufflé sesame snaps tart chupa chups cake chocolate bar icing macaroon.
+  </script>
   <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
