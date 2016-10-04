@@ -68,6 +68,9 @@ ul {
     @media screen and (max-width: @max-size-sm-breakpoint) {
         .flex-fixed(80%);
     }
+    @media screen and (max-width: @max-size-xs-breakpoint) {
+        .flex-fixed(90%);
+    }
 }
 
 .strong {
@@ -87,9 +90,38 @@ ul {
     display: flex;
     align-items: center;
     color: @grey;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: skew(-25deg) translate3d(-20px,0,0);
+        height: 100%;
+        width: 0;
+        background-color: @grey--light;
+        transition: width .7s @easeOutCirc, color .2s ease;
+        z-index: -1;
+    }
+    &:hover {
+        color: white;
+    }
+    &:hover:before {
+        width: calc(~'100% + 40px');
+    }
+    &:hover &__icon svg path {
+        fill: white;
+    }
     &--consultation {
         margin-top: 5px;
         border-color: @red;
+        &::before {
+            background-color: @red;
+        }
+    }
+    &:not(.button--consultation) {
     }
     &__label {
         font-size: 14px;
@@ -103,6 +135,7 @@ ul {
             height: 10px;
             path {
                 fill: @grey;
+                //transition: fill .2s ease;
             }
         }
         .button--consultation & {
@@ -121,6 +154,39 @@ ul {
     justify-content: flex-end;
     &:first-child {
         margin-right: 30px;
+    }
+    @media screen and (max-width: @product-head--breakpoint) {
+        flex-basis: 100%;
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        &:first-child {
+            margin-right: 0;
+        }
+    }
+    .graphic__form & {
+        @media screen and (max-width: 865px) {
+            flex-basis: 100%;
+            max-width: 100%;
+            justify-content: center;
+            &:first-child {
+                margin-right: 0;
+            }
+            &:last-child {
+                margin-top: 15px;
+            }
+        }
+    }
+    .products--all & {
+        @media screen and (max-width: 870px) {
+            flex-basis: 100%;
+            max-width: 100%;
+            justify-content: center;
+            margin-top: 20px;
+            &:first-child {
+                margin-right: 0;
+            }
+        }
     }
     &__label {
         &--onbackground {

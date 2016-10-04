@@ -16,8 +16,31 @@
         background-color: @red;
         z-index: -1;
     }
+    &__form {
+        @media screen and (max-width: 865px) {
+            flex-basis: 100%;
+            max-width: 100%;
+            justify-content: center;
+            margin-top: 20px;
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__wrapper {
+        @media screen and (max-width: 865px) {
+            justify-content: center;
+        }
+    }
     &__head {
         margin: 0 50px;
+        justify-content: space-between;
+        @media screen and (max-width: 865px) {
+            justify-content: center;
+        }
+        @media screen and (max-width: 400px) {
+            margin: 0 20px;
+        }
         h2 {
             .small-title;
             margin: 0;

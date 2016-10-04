@@ -5,11 +5,19 @@
     }
     &__head {
         margin: 0;
+        @media screen and (max-width: 870px) {
+            justify-content: center;
+        }
     }
     &__title {
         margin: 0;
         font-size: 24px;
         font-weight: normal;
+        @media screen and (max-width: @product-head--breakpoint) {
+            flex-basis: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
     }
     &__filter {
         span {
