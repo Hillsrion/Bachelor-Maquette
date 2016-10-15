@@ -181,3 +181,44 @@ slider.fillDots = function () {
     }
 }
 slider.init();
+
+var canvasManager = {
+    el: document.querySelector('canvas'),
+    iconSize: 15,
+    green: '#0cff56',
+    data: {
+        ventes: [
+            {"10-16": 1},
+            {"11-16": 3},
+            {"12-16": 5},
+            {"01-17": 3},
+            {"02-17": 4}
+        ],
+        commandes: [
+            {"10-16": 0},
+            {"11-16": 4},
+            {"12-16": 0},
+            {"01-17": 5},
+            {"02-17": 0}
+        ],
+        stock: [
+            {"10-16": 4},
+            {"11-16": 5},
+            {"12-16": 1},
+            {"01-17": 4},
+            {"02-17": 1}
+        ]
+    },
+    init: function () {
+        this.context = this.el.getContext('2d');
+        this.el.setAttribute('width',this.el.parentNode.offsetWidth);
+        this.drawPoint();
+    },
+    drawPoint: function () {
+        this.context.arc(this.iconSize, this.iconSize, 5, Math.PI*0/180, Math.PI*360/180);
+        this.context.fillStyle = 'blue';
+        this.context.fill();
+    }
+}
+
+canvasManager.init();
