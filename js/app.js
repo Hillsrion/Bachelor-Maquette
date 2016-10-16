@@ -184,8 +184,11 @@ slider.init();
 
 var canvasManager = {
     el: document.querySelector('canvas'),
-    iconSize: 15,
     green: '#0cff56',
+    lineNumber: 6,
+    // can't read 01 as an int.
+    monthRange: [10,11,12,'01','02'],
+    sellCoords: [],
     data: {
         ventes: [
             {"10-16": 1},
@@ -211,13 +214,125 @@ var canvasManager = {
     },
     init: function () {
         this.context = this.el.getContext('2d');
-        this.el.setAttribute('width',this.el.parentNode.offsetWidth);
-        this.drawPoint();
+        this.width = this.el.parentNode.offsetWidth;
+        this.height = parseInt(this.el.getAttribute('height'));
+        this.el.setAttribute('width',this.width);
+        this.monthCoords = this.getMonthCoords();
+        this.yAxisOffset = this.height/this.lineNumber;
+        this.drawLines();
+        this.drawPoints();
+        this.drawCurve();
     },
-    drawPoint: function () {
-        this.context.arc(this.iconSize, this.iconSize, 5, Math.PI*0/180, Math.PI*360/180);
-        this.context.fillStyle = 'blue';
-        this.context.fill();
+    drawTriangles: function () {
+        var i = 0;
+        var datas = this.data.commandes;
+        var delta = {
+            x: 5,
+            y: 4
+        };
+        var iteration,keys,x,y;
+        for (i; i < datas.length; i++) {
+            iteration = datas[i];
+            property = Object.keys(iteration)[0];
+            // Extracting the 2 first characters of the property name of the current object iterated.
+            x = parseFloat(this.monthCoords[property.substring(0,2)]);
+            y = parseFloat(this.height-(iteration[property]*this.yAxisOffset));
+            this.context.fillStyle = 'blue';
+            this.context.beginPath();
+            this.context.moveTo(x-delta.x, y+delta.y/2);
+            this.context.lineTo(x, y-delta.y-delta.y);
+            this.context.lineTo(x+delta.x, y+delta.y);
+            this.context.lineTo(x-delta.x, y+delta.y);
+            this.context.fill();
+        }
+    },
+    drawSquares: function () {
+        var i = 0;
+        var datas = this.data.stock;
+        var iteration,keys,x,y,property,size;
+        for (i; i < datas.length; i++) {
+            iteration = datas[i];
+            property = Object.keys(iteration)[0];
+            // Extracting the 2 first characters of the property name of the current object iterated.
+            x = this.monthCoords[property.substring(0,2)];
+            y = this.height-(iteration[property]*this.yAxisOffset)
+            size = 10;
+            this.context.fillStyle = 'white';
+            this.context.beginPath();
+            this.context.rect(x-size/2,y-size/2,size,size);
+            this.context.fill();
+        }
+    },
+    drawLines: function () {
+        var lineOffset = (this.el.offsetHeight/this.lineNumber).toFixed(2);
+        this.context.strokeStyle = 'rgba(255,255,255,0.3)';
+        var i = 0;
+        var offset;
+        for (i; i <= this.lineNumber; i++) {
+            /**
+            * Because of the line width i have to draw the first line at y=lineWidth
+            * otherwise half is out of the canvas.
+            */
+            offset = i > 0 ? i*lineOffset : 1;
+            this.context.beginPath();
+            this.context.moveTo(0,offset);
+            this.context.lineTo(this.width,offset);
+            this.context.stroke();
+        }
+    },
+    getMonthCoords: function () {
+        var i = 0;
+        var coords = {};
+        var monthLen = this.monthRange.length;
+        var monthOffset = this.width / monthLen;
+        var pointOffset;
+        for (i; i < monthLen; i++) {
+            pointOffset = i > 0 ? (i+1)*monthOffset-monthOffset/2 : monthOffset/2
+            coords[this.monthRange[i]] = pointOffset;
+        }
+        return coords;
+    },
+    drawCircles: function () {
+        var i = 0;
+        var datas = this.data.ventes;
+        var iteration,keys,x,y,property;
+        for (i; i < datas.length; i++) {
+            iteration = datas[i];
+            property = Object.keys(iteration)[0];
+            // Extracting the 2 first characters of the property name of the current object iterated.
+            x = this.monthCoords[property.substring(0,2)];
+            y = this.height-(iteration[property]*this.yAxisOffset)
+            this.context.fillStyle = this.green;
+            this.context.beginPath();
+            this.context.arc(x,y,5,Math.PI*0/180,Math.PI*360/180);
+            this.context.fill();
+            // Pushing coords of point to save them for the curve.
+            this.sellCoords.push({x:x,y:y});
+        }
+    },
+    drawCurve: function () {
+        var i = 0;
+        var coordsLen = this.sellCoords.length;
+        var iteration,F,isNextHigher;
+        // To not draw a shape for the last point.
+        for (i; i < coordsLen-1; i++) {
+            iteration = this.sellCoords[i];
+            nextIteration = this.sellCoords[i+1];
+            this.context.strokeStyle = 'black';
+            this.context.fillStyle = 'black';
+            isNextHigher = iteration.y > nextIteration.y;
+            this.context.beginPath();
+            // To place the curve a bit above the point.
+            this.context.moveTo(iteration.x,iteration.y);
+            this.context.quadraticCurveTo(nextIteration.x, nextIteration.y, nextIteration.x,nextIteration.y);
+            this.context.stroke();
+        }
+        console.log(this.el.getBoundingClientRect());
+    },
+    drawPoints:function () {
+        this.drawCircles();
+        this.drawTriangles();
+        this.drawSquares();
     }
 }
 

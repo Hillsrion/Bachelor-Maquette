@@ -24,8 +24,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="198" column="13" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+            <state relative-caret-position="172">
+              <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -34,7 +34,7 @@
       <file leaf-file-name="second-slider.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/second-slider.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
+            <state relative-caret-position="0">
               <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
               <folding />
             </state>
@@ -44,7 +44,7 @@
       <file leaf-file-name="var.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/var.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
+            <state relative-caret-position="0">
               <caret line="1" column="21" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="21" />
               <folding />
             </state>
@@ -54,7 +54,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7824">
+            <state relative-caret-position="0">
               <caret line="326" column="53" selection-start-line="326" selection-start-column="53" selection-end-line="326" selection-end-column="53" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -66,7 +66,7 @@
       <file leaf-file-name="graphic.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/graphic.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1464">
+            <state relative-caret-position="0">
               <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
               <folding />
             </state>
@@ -76,7 +76,7 @@
       <file leaf-file-name="global.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/global.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7368">
+            <state relative-caret-position="0">
               <caret line="307" column="23" selection-start-line="307" selection-start-column="23" selection-end-line="307" selection-end-column="23" />
               <folding />
             </state>
@@ -244,7 +244,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="SearchEverywhereHistoryKey" value="dirty&#9;null&#9;null&#10;var&#9;null&#9;null&#10;glo&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/global.less&#10;header&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/header.less&#10;pro&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/products.less&#10;graphi&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/graphic.less&#10;seco&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/second-slider.less&#10;lou&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/img/loupe.svg&#10;gulp&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/gulpfile.js&#10;footer&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/footer.less&#10;slider&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/slider.less&#10;global&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/global.less&#10;app&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/css/app.css&#10;VAR&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Gobelins/Bachelor-Maquette/less/var.less&#10;mixi&#9;FILE&#9;file://C:/Users/ismael/Desktop/Boulot/Prod Web-Progra/Bachelor-Maquette/less/mixins.less" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="C:\Users\ismael\Desktop\Boulot\Prod Web-Progra\Gobelins\Bachelor-Maquette\node_modules\gulp" />
   </component>
@@ -330,12 +330,12 @@
       <workItem from="1475860670721" duration="143000" />
       <workItem from="1475958445035" duration="102000" />
       <workItem from="1476044999802" duration="648000" />
-      <workItem from="1476538165961" duration="40000" />
+      <workItem from="1476538165961" duration="439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144347000" />
+    <option name="totallyTimeSpent" value="144746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,18 +356,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37315875" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37209302" sideWeight="0.49092284" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -708,15 +708,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="198" column="13" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+        <state relative-caret-position="172">
+          <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/second-slider.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
+        <state relative-caret-position="0">
           <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
           <folding />
         </state>
@@ -724,7 +724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/var.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="0">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="21" />
           <folding />
         </state>
@@ -732,7 +732,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7824">
+        <state relative-caret-position="0">
           <caret line="326" column="53" selection-start-line="326" selection-start-column="53" selection-end-line="326" selection-end-column="53" />
           <folding>
             <element signature="n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -742,7 +742,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/graphic.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1464">
+        <state relative-caret-position="0">
           <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
           <folding />
         </state>
@@ -750,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/global.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7368">
+        <state relative-caret-position="0">
           <caret line="307" column="23" selection-start-line="307" selection-start-column="23" selection-end-line="307" selection-end-column="23" />
           <folding />
         </state>
