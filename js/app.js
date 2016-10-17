@@ -221,15 +221,13 @@ var canvasManager = {
         this.yAxisOffset = this.height/this.lineNumber;
         this.drawLines();
         this.drawPoints();
+        this.makeMovePattern();
         this.drawCurve();
     },
     drawTriangles: function () {
         var i = 0;
         var datas = this.data.commandes;
-        var delta = {
-            x: 5,
-            y: 4
-        };
+        var delta = {x: 5,y: 4};
         var iteration,keys,x,y;
         for (i; i < datas.length; i++) {
             iteration = datas[i];
@@ -244,6 +242,41 @@ var canvasManager = {
             this.context.lineTo(x+delta.x, y+delta.y);
             this.context.lineTo(x-delta.x, y+delta.y);
             this.context.fill();
+        }
+    },
+    makeMovePattern: function () {
+        var obj = this.sellCoords;
+        this.schema = [];
+        if(obj.length>=2) {
+            var index = 0;
+            var direction = obj[0].y > obj[1].y ? 'up' : 'down';
+            for (index; index <= obj.length; index++) {
+                for (var i = index+1; i < obj.length; i++) {
+                    if(i==index+1) {
+                        var ref = index;
+                    } else if(i>index+1) {
+                        ref = i-1;
+                    }
+                    var a = obj[ref].y;
+                    var b = obj[i].y;
+                    if(direction=="up" && a < b) {
+                        direction = 'down';
+                        this.schema.push({start:obj[index].index ,end:obj[ref].index});
+                        console.log(ref+'up');
+                        index = ref;
+                    }
+                    if(direction=="down" && a > b) {
+                        direction = 'down';
+                        this.schema.push({start:obj[index].index ,end:obj[ref].index});
+                        console.log(ref+'down');
+                        index = ref;
+                    }
+                }
+                // For last move.
+                if(index==obj.length) {
+                    this.schema.push({start:obj[obj.length-2].index ,end:obj[obj.length-1].index});
+                }
+            }
         }
     },
     drawSquares: function () {
@@ -307,27 +340,20 @@ var canvasManager = {
             this.context.arc(x,y,5,Math.PI*0/180,Math.PI*360/180);
             this.context.fill();
             // Pushing coords of point to save them for the curve.
-            this.sellCoords.push({x:x,y:y});
+            this.sellCoords.push({x:x,y:y,index:i+1});
         }
     },
     drawCurve: function () {
-        var i = 0;
-        var coordsLen = this.sellCoords.length;
-        var iteration,F,isNextHigher;
-        // To not draw a shape for the last point.
-        for (i; i < coordsLen-1; i++) {
-            iteration = this.sellCoords[i];
-            nextIteration = this.sellCoords[i+1];
-            this.context.strokeStyle = 'black';
-            this.context.fillStyle = 'black';
-            isNextHigher = iteration.y > nextIteration.y;
-            this.context.beginPath();
-            // To place the curve a bit above the point.
-            this.context.moveTo(iteration.x,iteration.y);
-            this.context.quadraticCurveTo(nextIteration.x, nextIteration.y, nextIteration.x,nextIteration.y);
-            this.context.stroke();
-        }
-        console.log(this.el.getBoundingClientRect());
+
+    },
+    curve: function (x,y,x2,y2) {
+        this.context.strokeStyle = 'black';
+        this.context.fillStyle = 'black';
+        this.context.beginPath();
+        // To place the curve a bit above the point.
+        this.context.moveTo(x,y);
+        this.context.quadraticCurveTo(x2, y2, x2,y2);
+        this.context.stroke();
     },
     drawPoints:function () {
         this.drawCircles();
